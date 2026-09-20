@@ -1,8 +1,2 @@
 #!/bin/bash
-cd /tmp
-userdel betty 2>/dev/null
-rm hello 2>/dev/null
-touch hello
-useradd betty
-chown betty hello
-ls -l hello | cut -d' ' -f3
+bash -c $'cd /tmp\nuserdel betty 2>/dev/null\nrm hello 2>/dev/null\ntouch hello\nuseradd betty\nchown betty hello\nls -l hello | cut -d" " -f3'
