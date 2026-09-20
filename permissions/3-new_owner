@@ -1,2 +1,2 @@
 #!/bin/bash
-bash -c $'cd /tmp\nuserdel betty 2>/dev/null\nrm hello 2>/dev/null\ntouch hello\nuseradd betty\nchown betty hello\nls -l hello | cut -d" " -f3'
+chown betty /tmp/hello
