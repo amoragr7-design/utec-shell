@@ -1,2 +1,8 @@
 #!/bin/bash
-chown betty /tmp/hello
+cd /tmp
+userdel betty 2>/dev/null
+rm hello 2>/dev/null
+touch hello
+useradd betty
+chown betty hello
+ls -l hello | cut -d' ' -f3
