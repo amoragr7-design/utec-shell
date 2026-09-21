@@ -1,0 +1,2 @@
+#!/bin/bash
+stat -c '%U %n' hello | awk '$1 == "guillaume" {system("chown vincent " $2)}'
